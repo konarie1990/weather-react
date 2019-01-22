@@ -15,7 +15,7 @@ const Weather = props => (
     {props.temperature && (
       <p className="weather__key">
         {" "}
-        Temperature:
+        Temperature (Celsius):
         <span className="weather__value"> {props.temperature} </span>
       </p>
     )}
