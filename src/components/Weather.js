@@ -33,6 +33,14 @@ const Weather = props => (
         <span className="weather__value"> {props.description} </span>
       </p>
     )}
+    {/* Wind Speed */}
+    {props.wind && (
+      <p className="weather__key">
+        {" "}
+        Wind Speed mph:
+        <span className="weather__value"> {props.wind} </span>
+      </p>
+    )}
     {props.error && <p className="weather__error">{props.error}</p>}
   </div>
 );

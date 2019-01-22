@@ -13,6 +13,7 @@ class App extends React.Component {
     country: undefined,
     humidity: undefined,
     description: undefined,
+    wind: undefined,
     error: undefined
   };
   getWeather = async e => {
@@ -33,6 +34,7 @@ class App extends React.Component {
         country: data.sys.country,
         humidity: data.main.humidity,
         description: data.weather[0].description,
+        wind: data.wind.speed,
         error: ""
       });
     } else {
@@ -42,6 +44,7 @@ class App extends React.Component {
         country: undefined,
         humidity: undefined,
         description: undefined,
+        wind: undefined,
         error: "Please enter a value"
       });
     }
@@ -64,6 +67,7 @@ class App extends React.Component {
                     city={this.state.city}
                     country={this.state.country}
                     description={this.state.description}
+                    wind={this.state.wind}
                     error={this.state.error}
                   />
                 </div>
