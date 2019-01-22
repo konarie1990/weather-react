@@ -7,7 +7,7 @@ body {
 }
 
 .wrapper {
-  background: linear-gradient(to right, #e67e22, #e74c3c);
+  background: linear-gradient(to right, #ceb31a, #ee5d4d);
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -24,14 +24,14 @@ body {
 
 .title-container {
   height: 90vh;
-  background: url("https://github.com/hamza-mirza/react-weather-app/blob/master/src/img/bg.jpg?raw=true")
+  background: url("https://images.unsplash.com/photo-1438917887827-0640f96fa383?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=632&q=80")
     center center no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #000;
+  color: rgb(187, 187, 187);
 }
 
 .title-container__title {
